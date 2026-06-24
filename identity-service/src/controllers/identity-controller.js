@@ -1,8 +1,44 @@
-// user registration 
+const User = require("../models/User");
+const generateTokens = require("../utils/generateToken");
+const logger = require("../utils/logger");
+const { validateRegistration } = require("../utils/validation");
+// user registration
+const registerUser = async (req, res) => {
+  logger.info("Registration endpoint hits....");
+  try {
+    //   validate schema
+    const { error } = validateRegistration(req.body);
+    if (error) {
+      logger.warn("validation error", error.details[0].message);
+      return res.status(400).json({
+        success: false,
+        message: error.details[0].message,
+      });
+    }
 
-// user login 
+    const {username,email,password} = req.body;
+    const user = User.findOne({$or:[{username},{email}]})
+    if(user){
+        logger.warn("user is already exist....")
+        return res.status(400).json({
+            success:false,
+            message:"user already exist"
+        })
+    }
 
-// Refresh token 
+    user = new User({username,email,password})
+    await user.save()
+    logger.info("user was saved successfully....",user._id)
 
-// logout 
+    const {accessToken,refreshToken} = await generateTokens(user);
+    
+    
 
+
+  } catch (error) {}
+};
+// user login
+
+// Refresh token
+
+// logout
