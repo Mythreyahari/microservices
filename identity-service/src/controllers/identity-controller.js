@@ -16,29 +16,40 @@ const registerUser = async (req, res) => {
       });
     }
 
-    const {username,email,password} = req.body;
-    const user = User.findOne({$or:[{username},{email}]})
-    if(user){
-        logger.warn("user is already exist....")
-        return res.status(400).json({
-            success:false,
-            message:"user already exist"
-        })
+    const { username, email, password } = req.body;
+    const user = User.findOne({ $or: [{ username }, { email }] });
+    if (user) {
+      logger.warn("user is already exist....");
+      return res.status(400).json({
+        success: false,
+        message: "user already exist",
+      });
     }
 
-    user = new User({username,email,password})
-    await user.save()
-    logger.info("user was saved successfully....",user._id)
+    user = new User({ username, email, password });
+    await user.save();
+    logger.info("user was saved successfully....", user._id);
 
-    const {accessToken,refreshToken} = await generateTokens(user);
-    
-    
+    const { accessToken, refreshToken } = await generateTokens(user);
 
-
-  } catch (error) {}
+    res.status(201).json({
+      success: true,
+      message: "user was registered successfully....",
+      accessToken,
+      refreshToken,
+    });
+  } catch (error) {
+    logger.error("Registration error occured", error);
+    res.status(500).json({
+      success: false,
+      message: "Internal server error",
+    });
+  }
 };
 // user login
 
 // Refresh token
 
 // logout
+
+module.exports = { registerUser };
