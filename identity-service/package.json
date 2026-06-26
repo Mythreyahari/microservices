@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "src/server.js",
-    "dev":"src/server.js"
+    "dev": "src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,7 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.7.0",
     "rate-limit-redis": "^5.0.0",
+    "rate-limiter-flexible": "^11.2.0",
     "winston": "^3.19.0"
   }
 }
