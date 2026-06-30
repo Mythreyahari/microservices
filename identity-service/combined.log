@@ -1,0 +1,98 @@
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T12:58:19.263Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T12:58:20.646Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:06:04.260Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:06:06.168Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:07:02.869Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:07:04.607Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:07:08.986Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:07:10.692Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:07:46.496Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:07:47.464Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:08:41.312Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:08:41.314Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:08:41.339Z"}
+{"level":"warn","message":"validation error","service":"identity-service","timestamp":"2026-06-28T14:08:41.351Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:12:11.492Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:12:11.492Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:12:11.496Z"}
+{"level":"error","message":"Registration error occured Existinguseruser is not defined","service":"identity-service","stack":"ReferenceError: Existinguseruser is not defined\n    at registerUser (C:\\Users\\hari\\Desktop\\Express\\Microservices\\identity-service\\src\\controllers\\identity-controller.js:21:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-06-28T14:12:11.687Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:12:47.302Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:12:50.540Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:12:50.598Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:12:50.600Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:12:50.659Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:12:51.505Z"}
+{"level":"error","message":"Registration error occured Assignment to constant variable.","service":"identity-service","stack":"TypeError: Assignment to constant variable.\n    at registerUser (C:\\Users\\hari\\Desktop\\Express\\Microservices\\identity-service\\src\\controllers\\identity-controller.js:29:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-06-28T14:12:52.044Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:11.838Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:22.593Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:14:23.723Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:30.284Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:14:31.238Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:33.482Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:14:34.435Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:39.298Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:14:40.596Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:47.448Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:14:48.402Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:14:52.194Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:14:53.244Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:14:59.181Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:14:59.182Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:14:59.190Z"}
+{"level":"error","message":"Registration error occured Cannot read properties of null (reading '_id')","service":"identity-service","stack":"TypeError: Cannot read properties of null (reading '_id')\n    at registerUser (C:\\Users\\hari\\Desktop\\Express\\Microservices\\identity-service\\src\\controllers\\identity-controller.js:36:57)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-06-28T14:14:59.518Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:18:39.330Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:18:42.900Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:18:43.924Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:18:50.282Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:18:51.459Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:18:58.685Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:19:00.656Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:19:05.131Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:19:10.376Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:19:18.292Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:19:22.590Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:19:23.811Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:19:32.497Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:19:33.536Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:19:50.900Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:19:54.126Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:19:59.674Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:20:01.597Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:20:18.250Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:20:18.252Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:20:18.286Z"}
+{"level":"error","message":"Registration error occured Existinguseruser is not defined","service":"identity-service","stack":"ReferenceError: Existinguseruser is not defined\n    at registerUser (C:\\Users\\hari\\Desktop\\Express\\Microservices\\identity-service\\src\\controllers\\identity-controller.js:21:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-06-28T14:20:18.815Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:21:42.377Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:21:44.878Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:21:45.193Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:21:45.194Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:21:45.204Z"}
+{"level":"warn","message":"user is already exist....","service":"identity-service","timestamp":"2026-06-28T14:21:46.140Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:50:01.871Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:50:03.406Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:50:11.257Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:50:11.258Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:50:11.277Z"}
+{"buffer":{"data":[106,65,52,163,160,3,20,220,227,40,242,154],"type":"Buffer"},"level":"info","message":"user was saved successfully....","service":"identity-service","timestamp":"2026-06-28T14:50:11.711Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:54:04.505Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:54:05.564Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:54:12.622Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:54:13.902Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:54:19.242Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:54:21.246Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:54:22.331Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:54:31.970Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:54:32.865Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:55:00.531Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:55:00.532Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:55:00.550Z"}
+{"level":"info","message":"user was saved successfully....","service":"identity-service","timestamp":"2026-06-28T14:55:01.020Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:57:45.108Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:57:46.171Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:57:49.724Z"}
+{"level":"info","message":"The server was running on port:3001","service":"identity-service","timestamp":"2026-06-28T14:57:52.127Z"}
+{"level":"info","message":"Mongodb was connected successfully....","service":"identity-service","timestamp":"2026-06-28T14:57:53.034Z"}
+{"level":"info","message":"Received POST req to /api/auth/register","service":"identity-service","timestamp":"2026-06-28T14:58:15.947Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-06-28T14:58:15.949Z"}
+{"level":"info","message":"Registration endpoint hits....","service":"identity-service","timestamp":"2026-06-28T14:58:15.971Z"}
+{"level":"info","message":"user was saved successfully....,userid:6a413688beb892eb73ccf614","service":"identity-service","timestamp":"2026-06-28T14:58:16.357Z"}

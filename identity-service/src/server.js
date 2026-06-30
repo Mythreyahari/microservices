@@ -8,16 +8,20 @@ const app = express();
 const { RateLimiterRedis } = require("rate-limiter-flexible");
 const Redis = require("ioredis");
 const { rateLimit } = require("express-rate-limit");
-const {RedisStore} = require("rate-limit-redis")
+const { RedisStore } = require("rate-limit-redis");
+const routes = require("./routes/identity-route");
+const errorHandler = require("./middleware/errorHandler");
 // connect the database
 connectToDb();
+
+const PORT = process.env.PORT || 3001;
 
 // Redis
 const redisClient = new Redis(process.env.REDIS_URL);
 
 // middleware
 app.use(helmet());
-app.use(cors);
+app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
   logger.info(`Received ${req.method} req to ${req.url}`);
@@ -58,11 +62,26 @@ const sensitiveEndpointsLimitter = rateLimit({
       message: "Too many requests",
     });
   },
-  store:new RedisStore({
-    sendCommand:(...args)=>redisClient.call(...args)
-  })
+  store: new RedisStore({
+    sendCommand: (...args) => redisClient.call(...args),
+  }),
 });
- 
 
+// Apply sensitive endpoint router to our routes
+app.use("/api/auth/register", sensitiveEndpointsLimitter);
 
+// Routes
+app.use("/api/auth", routes);
 
+// error handler
+app.use(errorHandler);
+
+// server listen
+app.listen(PORT, () => {
+  logger.info(`The server was running on port:${PORT}`);
+});
+
+// unhandled promise rejection
+process.on("unhandledRejection", (reason, promise) => {
+  logger.error("Unhandled Rejectin at:", promise, "Reason:", reason);
+});

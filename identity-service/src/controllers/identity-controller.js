@@ -17,8 +17,8 @@ const registerUser = async (req, res) => {
     }
 
     const { username, email, password } = req.body;
-    const user = User.findOne({ $or: [{ username }, { email }] });
-    if (user) {
+    const Existinguser = await User.findOne({ $or: [{ username }, { email }] });
+    if (Existinguser) {
       logger.warn("user is already exist....");
       return res.status(400).json({
         success: false,
@@ -26,9 +26,14 @@ const registerUser = async (req, res) => {
       });
     }
 
-    user = new User({ username, email, password });
-    await user.save();
-    logger.info("user was saved successfully....", user._id);
+    const user = await User.create({
+      username,
+      email,
+      password,
+    });
+    // user = new User({  });
+    // await user.save();
+    logger.info(`user was saved successfully....,userid:${user._id}`);
 
     const { accessToken, refreshToken } = await generateTokens(user);
 
