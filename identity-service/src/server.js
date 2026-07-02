@@ -25,7 +25,7 @@ app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
   logger.info(`Received ${req.method} req to ${req.url}`);
-  logger.info(`Request body, ${req.body}`);
+  logger.info(`Request body, ${JSON.stringify(req.body)}`);
   next();
 });
 
